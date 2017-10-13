@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TriggerExample : MonoBehaviour {
 
-    private WalkThroughWall WTWScript;
+    private MCP_EventMaster eventMasterScript;
 
     private void Start()
     {
@@ -14,26 +14,12 @@ public class TriggerExample : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.name + " has entered");  
-        WTWScript.SetLayerToNotSolid();
+        eventMasterScript.Call_GE();
+        Destroy(gameObject);
     }
-
-    private void OnTriggerExit(Collider other)
-    {
-        Debug.Log(other.name + " has exited");
-        WTWScript.SetLayerToDefault();
-    }
-
-    //private void OnTriggerStay(Collider other)
-    //{
-    //   //  Debug.Log(other.name + " is in the trigger");
-    //}
 
     void SetInitRef()
     {
-        if (GameObject.Find("Wall") != null)
-        {
-            WTWScript = GameObject.Find("Wall").GetComponent<WalkThroughWall>();
-        }
-        
+        eventMasterScript = GameObject.Find("MasterControlProgram").GetComponent<MCP_EventMaster>();
     }
 }

@@ -87,7 +87,15 @@
     <Compile Include="Assets\Scripts\Detection.cs" />
     <Compile Include="Assets\Scripts\EnemyChase.cs" />
     <Compile Include="Assets\Scripts\FindEnemies.cs" />
-    <Compile Include="Assets\Scripts\MCP_CursorToggle.cs" />
+    <Compile Include="Assets\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\Scripts\MasterScripts\MCP_Master.cs" />
+    <Compile Include="Assets\Scripts\MCP Scripts\MCP_EventMaster.cs" />
+    <Compile Include="Assets\Scripts\MCP Scripts\MCP_References.cs" />
+    <Compile Include="Assets\Scripts\MCP Scripts\MCP_ToggleCursor.cs" />
+    <Compile Include="Assets\Scripts\MCP Scripts\MCP_ToggleInventoryUI.cs" />
+    <Compile Include="Assets\Scripts\MCP Scripts\MCP_ToggleMenu.cs" />
+    <Compile Include="Assets\Scripts\MCP Scripts\MCP_TogglePause.cs" />
+    <Compile Include="Assets\Scripts\MCP Scripts\MCP_TogglePlayer.cs" />
     <Compile Include="Assets\Scripts\NadeExplosion.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />

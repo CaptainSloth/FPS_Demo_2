@@ -6,16 +6,18 @@ public class WalkThroughWall : MonoBehaviour {
 
     private Color NSColor = new Color(0, 0, 1, 0.3f);
     private Color defaultColor = new Color(1, 1, 1, 1);
+    private MCP_EventMaster eventMasterScript;
 
-    //private void OnEnable()
-    //{
-    //    gameObject.layer = LayerMask.NameToLayer("Not Solid");
-    //}
+    void OnEnable()
+    {
+        SetInitRef();
+        eventMasterScript._GE += SetLayerToNotSolid;
+    }
 
-    //private void OnDisable()
-    //{
-    //    gameObject.layer = LayerMask.NameToLayer("Default");
-    //}
+    void OnDisable()
+    {
+        eventMasterScript._GE -= SetLayerToNotSolid;
+    }
 
     public void SetLayerToNotSolid()
     {
@@ -23,10 +25,8 @@ public class WalkThroughWall : MonoBehaviour {
         GetComponent<Renderer>().material.color = NSColor;
     }
 
-
-    public void SetLayerToDefault()
+    void SetInitRef()
     {
-        gameObject.layer = LayerMask.NameToLayer("Default");
-        GetComponent<Renderer>().material.SetColor("_Color",defaultColor);
+        eventMasterScript = GameObject.Find("MasterControlProgram").GetComponent<MCP_EventMaster>();
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class NadeExplosion : MonoBehaviour {
 
     private Collider[] hitColliders;
-    private float destryTime = 7;
+    private float destryTime = 7f;
     public float blastRadius;
     public float explosionPower;
     public LayerMask explosionLayers;

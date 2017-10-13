@@ -8,16 +8,18 @@ public class Spawner : MonoBehaviour
     public int numOfEnemies;
     private float spawnRadius = 5;
     private Vector3 spawnPos;
+    private MCP_EventMaster eventMasterScript;
 
-	// Use this for initialization
-	void Start () {
-        SpawnObject();
-	}
-	
-	//// Update is called once per frame
-	//void Update () {
-		
-	//}
+    void OnEnable()
+    {
+        SetInitRef();
+        eventMasterScript._GE += SpawnObject;
+    }
+
+    void OnDisable()
+    {
+        eventMasterScript._GE -= SpawnObject;
+    }
 
     void SpawnObject()
     {
@@ -26,5 +28,10 @@ public class Spawner : MonoBehaviour
             spawnPos = transform.position + Random.insideUnitSphere * spawnRadius;
             Instantiate(objToSpawn, spawnPos, Quaternion.identity);
         }
+    }
+
+    void SetInitRef()
+    {
+        eventMasterScript = GameObject.Find("MasterControlProgram").GetComponent<MCP_EventMaster>();
     }
 }
