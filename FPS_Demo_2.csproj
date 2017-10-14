@@ -84,24 +84,29 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Detection.cs" />
-    <Compile Include="Assets\Scripts\EnemyChase.cs" />
-    <Compile Include="Assets\Scripts\FindEnemies.cs" />
-    <Compile Include="Assets\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\Scripts\GeneralScripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MasterScripts\MCP_Master.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_EventMaster.cs" />
+    <Compile Include="Assets\Scripts\MCP Scripts\MCP_GameOver.cs" />
+    <Compile Include="Assets\Scripts\MCP Scripts\MCP_GoToMenuScene.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_References.cs" />
+    <Compile Include="Assets\Scripts\MCP Scripts\MCP_RestartLevel.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_ToggleCursor.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_ToggleInventoryUI.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_ToggleMenu.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_TogglePause.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_TogglePlayer.cs" />
-    <Compile Include="Assets\Scripts\NadeExplosion.cs" />
-    <Compile Include="Assets\Scripts\Shoot.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
-    <Compile Include="Assets\Scripts\ThrowNade.cs" />
-    <Compile Include="Assets\Scripts\TriggerExample.cs" />
-    <Compile Include="Assets\Scripts\WalkThroughWall.cs" />
+    <Compile Include="Assets\Scripts\zSimpleScripts\Detection.cs" />
+    <Compile Include="Assets\Scripts\zSimpleScripts\EnemyChase.cs" />
+    <Compile Include="Assets\Scripts\zSimpleScripts\FindEnemies.cs" />
+    <Compile Include="Assets\Scripts\zSimpleScripts\FirstPersonController.cs" />
+    <Compile Include="Assets\Scripts\zSimpleScripts\NadeExplosion.cs" />
+    <Compile Include="Assets\Scripts\zSimpleScripts\Shoot.cs" />
+    <Compile Include="Assets\Scripts\zSimpleScripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\zSimpleScripts\TestGameOver.cs" />
+    <Compile Include="Assets\Scripts\zSimpleScripts\ThrowNade.cs" />
+    <Compile Include="Assets\Scripts\zSimpleScripts\TriggerExample.cs" />
+    <Compile Include="Assets\Scripts\zSimpleScripts\WalkThroughWall.cs" />
     <Compile Include="Assets\zSampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\zSampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\zSampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
