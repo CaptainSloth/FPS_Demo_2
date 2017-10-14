@@ -41,7 +41,7 @@ public class MCP_ToggleInventoryUI : MonoBehaviour {
         }
     }
 
-    void ToggleInventoryUI()
+    public void ToggleInventoryUI()
     {
         if(inventoryUI != null)
         {

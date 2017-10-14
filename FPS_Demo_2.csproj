@@ -86,9 +86,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GeneralScripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MasterScripts\MCP_Master.cs" />
+    <Compile Include="Assets\Scripts\MasterScripts\Player_Master.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_EventMaster.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_GameOver.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_GoToMenuScene.cs" />
+    <Compile Include="Assets\Scripts\MCP Scripts\MCP_PanelInstructions.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_References.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_RestartLevel.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_ToggleCursor.cs" />
@@ -96,6 +98,11 @@
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_ToggleMenu.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_TogglePause.cs" />
     <Compile Include="Assets\Scripts\MCP Scripts\MCP_TogglePlayer.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\Player_AmmoBox.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\Player_CanvasHurt.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\Player_DetectItem.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\Player_Health.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\Player_Inventory.cs" />
     <Compile Include="Assets\Scripts\zSimpleScripts\Detection.cs" />
     <Compile Include="Assets\Scripts\zSimpleScripts\EnemyChase.cs" />
     <Compile Include="Assets\Scripts\zSimpleScripts\FindEnemies.cs" />
