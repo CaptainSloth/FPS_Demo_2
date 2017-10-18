@@ -44,8 +44,8 @@ public class Player_DetectItem : MonoBehaviour {
     {
         if(Input.GetButtonDown(buttonPickup) && Time.timeScale >0 && itemAvailableForPickup.root.tag != MCP_References._playerTag)
         {
-            Debug.Log("Pickup attempted");
-            //itemAvailableForPickup.GetComponent<Item_Master>().CallEventPickupAction(rayTransformPivot);
+            // Debug.Log("Pickup attempted");
+            itemAvailableForPickup.GetComponent<Item_Master>().CallEventPickupAction(rayTransformPivot);
         }
     }
 
