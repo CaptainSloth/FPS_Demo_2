@@ -4,6 +4,8 @@ using UnityEngine;
 public class Enemy_Master : MonoBehaviour {
 
     public Transform _target;
+    public bool isOnRoute;
+    public bool isNavPaused;
 
     public delegate void GeneralEventHandler();
     public event GeneralEventHandler EventEnemyDie;
