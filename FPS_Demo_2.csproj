@@ -90,11 +90,13 @@
     <Compile Include="Assets\Scripts\EnemyScripts\Enemy_Detection.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Enemy_Health.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Enemy_NavDestinationReached.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Enemy_NavFlee.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Enemy_NavPause.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Enemy_NavPursue.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Enemy_NavWander.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Enemy_RagdollToggle.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Enemy_TakeDMG.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\SpawnerProximity.cs" />
     <Compile Include="Assets\Scripts\GeneralScripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\ItemScripts\Item_Ammo.cs" />
     <Compile Include="Assets\Scripts\ItemScripts\Item_Animator.cs" />
