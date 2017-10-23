@@ -9,13 +9,17 @@ public class Item_SetPos : MonoBehaviour {
     void OnEnable () 
 	{
         SetInitRef();
-        SetPosOnPlayer();
         item_Master.EventObjectPickup += SetPosOnPlayer;
 	}
 	
 	void OnDisable () 
 	{
         item_Master.EventObjectPickup -= SetPosOnPlayer;
+    }
+
+    void Start()
+    {
+        SetPosOnPlayer();
     }
 
     void SetInitRef()

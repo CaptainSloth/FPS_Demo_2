@@ -9,7 +9,6 @@ public class Item_RigidBody : MonoBehaviour {
 	void OnEnable () 
 	{
         SetInitRef();
-        CheckifStartsInInventory();
         item_Master.EventObjectThrow += SetIsKinematicToFalse;
         item_Master.EventObjectPickup += SetIsKinematicToTrue;
     }
@@ -18,6 +17,11 @@ public class Item_RigidBody : MonoBehaviour {
 	{
         item_Master.EventObjectThrow -= SetIsKinematicToFalse;
         item_Master.EventObjectPickup -= SetIsKinematicToTrue;
+    }
+
+    void Start()
+    {
+        CheckifStartsInInventory();
     }
 
     void SetInitRef()

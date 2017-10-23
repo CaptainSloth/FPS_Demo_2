@@ -123,13 +123,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="FPS_Demo_2.Plugins.csproj">
-      <Project>{BD87839C-3E8F-210D-DEF9-BCC49A36A46A}</Project>
-      <Name>FPS_Demo_2.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="FPS_Demo_2.csproj">
       <Project>{F554A54B-B2D9-0E5C-394E-6F10017103B6}</Project>
       <Name>FPS_Demo_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="FPS_Demo_2.Plugins.csproj">
+      <Project>{BD87839C-3E8F-210D-DEF9-BCC49A36A46A}</Project>
+      <Name>FPS_Demo_2.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +141,7 @@
     <Compile Include="Assets\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Imported\MentalDreamsAssets\SoldierSoundsPack\ReadMe!.txt" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />

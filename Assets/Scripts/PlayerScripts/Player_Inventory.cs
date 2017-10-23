@@ -22,6 +22,7 @@ public class Player_Inventory : MonoBehaviour {
     private void OnEnable()
     {
         SetInitRef();
+        DeactivateAllInventoryItems();
         UpdateInventoryListAndUI();
         CheckIfHandsEmpty();
 
